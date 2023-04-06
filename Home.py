@@ -52,8 +52,8 @@ sp_wd=st.number_input("กรุณาเลือกข้อมูล sepal.wi
 
 if st.button("ทำนายผล"):
    
-   X = df.drop('variety', axis=1)
-   y = df.variety
+   X = dt.drop('variety', axis=1)
+   y = dt.variety
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)   
    x_input = np.array([[5.1, 3.5, 1.4, 0.2]])
