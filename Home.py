@@ -58,9 +58,12 @@ if st.button("ทำนายผล"):
    Knn_model.fit(X, y)   
    x_input = np.array([[5.1, 3.5, 1.4, 0.2]])
    st.write(Knn_model.predict(x_input))
+   
    out=Knn_model.predict(x_input)
-   st.write(out[0])
-
-   st.button("ไม่แสดงข้อมูล")
+   if out[0] == 'Setosa':
+    st.image("./pic/setosa.jpg")
+   else:       
+    st.writ('xxx')    
+   #st.button("ไม่แสดงข้อมูล")
 else:
-    st.write("ไม่แสดงข้อมูล")
+   st.write("ไม่แสดงข้อมูล")
