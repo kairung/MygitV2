@@ -7,7 +7,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 #st.header("kairung")
-st.image("./pic/npru.png")
+st.image("./pic/kairung1.png")
 html_8 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>การทำนายข้อมูลดอกไม้</h5></center>
