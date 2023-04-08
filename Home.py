@@ -10,11 +10,10 @@ import plotly.graph_objects as go
 st.image("./pic/npru.png")
 
 
-def path_to_image_html(path):
-    return '<img src="' + "./pic/kairung1.png" + '" width="60" >'
+html="<img src="' + "./pic/kairung1.png" + '" width='60' >"
 
 
-st.markdown(formatters=dict(Country=path_to_image_html)),unsafe_allow_html=True)
+st.markdown(html,unsafe_allow_html=True)
 
 html_8 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
