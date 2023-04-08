@@ -14,10 +14,7 @@ def path_to_image_html(path):
     return '<img src="' + "./pic/kairung1.png" + '" width="60" >'
 
 
-st.markdown(
-    df.to_html(escape=False, formatters=dict(Country=path_to_image_html)),
-    unsafe_allow_html=True,
-)
+st.markdown(escape=False, formatters=dict(Country=path_to_image_html)),unsafe_allow_html=True)
 
 html_8 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
