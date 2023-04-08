@@ -9,10 +9,15 @@ import plotly.graph_objects as go
 #st.header("kairung")
 st.image("./pic/npru.png")
 
-html_img= """
-<center> <img src='./pic/kairung1.png' width="100" height="100" border="0" alt=""></center>
-"""
-st.markdown(html_img, unsafe_allow_html=True)
+
+def path_to_image_html(path):
+    return '<img src="' + "./pic/kairung1.png" + '" width="60" >'
+
+
+st.markdown(
+    df.to_html(escape=False, formatters=dict(Country=path_to_image_html)),
+    unsafe_allow_html=True,
+)
 
 html_8 = """
 <div style="background-color:#EC7063;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
