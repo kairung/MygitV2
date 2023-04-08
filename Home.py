@@ -16,6 +16,10 @@ html_8 = """
 st.markdown(html_8, unsafe_allow_html=True)
 st.markdown("")
 
+dt = pd.read_csv("./data/iris.csv")
+
+st.write(dt.head(10))
+
 
 
 #st.image("./pic/kairung.jpg")
