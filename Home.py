@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 st.image("./pic/npru.png")
 
 html_img= """
-<center><img src="./pic/kairung1.png" width="60" height="60" border="0" alt=""></center>
+<center> <img src='./pic/kairung1.png' width="100" height="100" border="0" alt=""></center>
 """
 st.markdown(html_img, unsafe_allow_html=True)
 
