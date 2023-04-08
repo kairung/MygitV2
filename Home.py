@@ -16,7 +16,7 @@ with col1:
 
 with col2:
    st.header("Verginiga")
-   st.image("./pic/virsicolor.jpg")
+   st.image("./pic/versicolor.jpg")
 
 with col3:
    st.header("Setosa")
